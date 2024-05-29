@@ -31,7 +31,7 @@ public class listeners extends extentReportManager implements ITestListener {
 			test.log(Status.FAIL, "Test CASE Failed is " + result.getName());
 			test.log(Status.FAIL, "Test CASE Failed is " + result.getThrowable()); // To throw excpetion
 
-			/// this code is for taking th path of nstore screenshot and attch to report
+			/// this code is for taking the path of store screenshot and attached to report
 			String screenshotPath = BaseClass.screenShot(BaseClass.driver, result.getName());
 
 			test.addScreenCaptureFromPath(screenshotPath); // Adding screenshot inside report//To add name in extent
